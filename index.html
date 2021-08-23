@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://kit.fontawesome.com/58df3cd163.js" crossorigin="anonymous"></script>
     <title>Flow</title>
@@ -16,24 +18,24 @@
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg fixed-top ">
-        <img src="./images/app_logo.png" alt="brand Icon" class="brand-icon">
+        <img src="./images/app_logo.png" alt="brand Icon" class="img-fluid brand-icon">
         <a class="navbar-brand" href="#home">FLOW</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav mr-4 ml-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" data-value="home" href="#home">Home</a>
+                    <a class="nav-link text-center" data-value="home" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-value="why" href="#why-flow">Why Flow</a>
+                    <a class="nav-link text-center" data-value="why" href="#why-flow">Why Flow</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="contact" href="#contact">Contact</a>
+                    <a class="nav-link text-center" data-value="contact" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -42,18 +44,16 @@
     <header class="header" id="home">
         <!-- <div class="overlay"></div> -->
 
-        <div class="row">
-            <div class="container">
-                <div class="description col-lg-6 col-md-6 col-sm-12">
-                    <p class="with">With</p>
-                    <h1>FLOW</h1>
-                    <p>Managing your expenses<br> is not a task anymore</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.expense.flow"><img src="./images/google-play-badge.png" alt="get it on google play"></a>
-                </div>
+        <div class="row h-100 container mx-auto my-auto mt-4">
+            <div class="container description col-lg-6 col-md-6 col-sm-12 my-auto">
+                    <p class="h3">With</p>
+                    <h1 class="fw-bold">FLOW</h1>
+                    <p class="h3">Managing your expenses<br> is not a task anymore</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.expense.flow"><button class="btn btn-outline-dark btn-lg download-button " type="button"><i class="fab fa-google-play"></i> Download Now </button></a>
             </div>
-            <div class="container">
-                <div class="mockup-home col-lg-6 col-md-6 col-sm-12 align-items-center">
-                    <img src="./images/clay_mockup_home.png" alt="mockups">
+            <div class="container col-lg-6 col-md-6 col-sm-12 my-auto">
+                <div class="mockup-home ">
+                    <img src="./images/clay_mockup_home.png" class="img-fluid" alt="mockups">
                 </div>
             </div>
         </div>
@@ -61,42 +61,41 @@
 
     <main>
         <!--Why Flow Section Starts-->
-        <div class="why-flow-root row" id="why-flow">
-            <div class="my-auto row">
-                <div class="screenshot-why-section text-center col-lg-6 col-md-6 col-sm-12">
-                    <img src="./images/screenshot-1.png" alt="brand Icon">
-
+        <div class="why-flow-root row container mx-auto" id="why-flow">
+            <div class="my-auto row"></div>
+                <div class="screenshot-why-section text-center col-lg-6 col-md-12 col-sm-12 my-auto d-none d-sm-block">
+                    <img src="./images/screenshot-1.png" class="img-fluid" alt="screenshot-1">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 my-auto">
                     <div class="why-section">
-                        <h1 class="text-left headings">Why Flow?</h1>
+                        <h1 class="text-left headings display-5 fw-bold mt-4">Why Flow?</h1>
                     </div>
-                    <div class="why-flow-description">
-                        <p class="text-left">With Clean and minimal UI and all the things you need to manage the Flow of
+                    <div class="why-flow-description ">
+                        <p class="text-left h5 mt-3">With Clean and Minimal UI and all the things you need to manage the Flow of
                             your
                             money. Flow provides a seamless experience by removing all the unnecessary hassle of
                             choosing 10 different things to categorize the expense. Its a one click tool to record
                             where your money goes and comes from.
                         </p>
                     </div>
-                    <ul class="features-list">
+                    <ul class="features-list list-unstyled mt-5">
                         <div class="row text-center">
-                            <li>
+                            <li class="col">
                                 <i class="fas fa-mobile"></i>
                                 <div>
-                                    <p>Clean and minimal UI</p>
+                                    <p class="mt-2">Clean and minimal UI</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="col">
                                 <i class="fas fa-sync"></i>
                                 <div>
-                                    <p>Cross device Sync</p>
+                                    <p class="mt-2">Cross device Sync</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="col">
                                 <i class="fas fa-stream"></i>
                                 <div>
-                                    <p>Hassle free management</p>
+                                    <p class="mt-2">Hassle free management</p>
                                 </div>
                             </li>
                         </div>
@@ -107,15 +106,16 @@
 
         <!--Why Flow Section Ends-->
 
-        <div class="contact" id="contact">
-            <div class="row h-100">
-                <div class="col-sm-12 my-auto">
-                    <h1 class="headings text-center">Contact</h1>
+        <div class="contact container my-auto" id="contact">
+            <div class=" row h-100 my-auto mx-auto ">
+                <div class="col my-auto mx-auto">
+                    <h1 class="headings text-center fw-bold display-5">Contact</h1>
                     <p class="text-center">We would love to hear from you, contact us at:</p>
                     <!-- <a href="mailto:flow.expensemanager@gmail.com" class="text-center contact-email">flow.expensemanager@gmail.com</a> -->
-                    <p class="text-center contact-email"><a href="mailto:flow.expensemanager@gmail.com" class="text-center contact-email">Flow.expensemanager@gmail.com</a></p>
+                    <p class="text-center contact-email h5 fst-italic"><a href="mailto:flow.expensemanager@gmail.com"
+                            class="text-center contact-email">Flow.expensemanager@gmail.com</a></p>
                 </div>
-              
+
             </div>
         </div>
 
