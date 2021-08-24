@@ -28,8 +28,6 @@
     max-width: 46px;
     min-width: 40px;
     border-radius: 50%;
-    
-    background: url(g12.png);
     margin: 0px 5px;
 }
 
@@ -38,6 +36,10 @@
 
 .description h1{
     color:#ef5455 ;
+}
+
+.navbar-brand:hover{
+    color:#fff;
 }
 
 
@@ -97,4 +99,8 @@
 .download-button:hover{
 background-color: #ef5455;
 border: #ef5455 solid 1px;
+}
+
+.list-group-item{
+    border: none;
 }
